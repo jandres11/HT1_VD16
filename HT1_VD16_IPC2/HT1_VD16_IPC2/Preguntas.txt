@@ -1,0 +1,10 @@
+¿Qué entiende como "commit"?
+- Llevar a cabo o confirmar un cambio en la aplicación
+
+¿Qué entiende como "merge"?
+- Unir dos o mas partes que se estaban trabajando por aparte
+a una sola en la aplicacion
+
+¿Cuál es la diferencia entre "Pull" y "Push"?
+- Una sirve para guardar los cambios y la otra los excluye de
+los archivos guardados
