@@ -24,7 +24,14 @@ namespace HT1_VD16_IPC2
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            int a, b, c;
+            a = int.Parse(textBox1.Text);
+            b = int.Parse(textBox2.Text);
+            c = int.Parse(textBox3.Text);
+            double raiz1 = (double)((b * -1) + ((b * b) - (4 * c * a)) ^ (1 / 2)) / (2 * a);
+            double raiz2 = (double)((b * -1) - ((b * b) - (4 * c * a)) ^ (1 / 2)) / (2 * a);
+            double x = raiz1 + raiz2;
+            MessageBox.Show("Las raices son: " + raiz1 +" y " + raiz2);
         }
 
         private void button1_Click(object sender, EventArgs e)
