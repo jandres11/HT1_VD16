@@ -57,5 +57,37 @@ namespace HT1_VD16_IPC2
             MessageBox.Show("El resultado de X--Y... Z--Resultado es: " + res);
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int d1, d2, d3;
+            d1 = int.Parse(textBox1.Text);
+            d2 = int.Parse(textBox2.Text);
+            d3 = int.Parse(textBox3.Text);
+            int mediana = 0;
+            if ((d1>d2 && d1<d3)||(d1>d3 && d1<d2))
+            {
+                mediana = d1;
+            }else if ((d2>d1 && d2<d3)||(d2>d3 && d2<d1))
+            {
+                mediana = d2;
+            }else if ((d3>d1 && d3<d2)||(d3>d2 && d3<d1))
+            {
+                mediana = d3;
+            }else
+            {
+                mediana = 0;
+            }
+
+            if (mediana == 0)
+            {
+                MessageBox.Show("No hay mediana");
+            }
+            else
+            {
+                MessageBox.Show("La mediana es: "+ mediana);
+            }
+
+        }
     }
 }
