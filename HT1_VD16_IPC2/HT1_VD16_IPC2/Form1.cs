@@ -54,7 +54,7 @@ namespace HT1_VD16_IPC2
             z = int.Parse(textBox3.Text);
             double res = (z * y / x);
 
-            MessageBox.Show("El resultado de X--Y... Z--Resultado es: " + res);
+            MessageBox.Show("El resultado de X--Y... Z--Resultado es: " + res+"_201504315");
 
         }
 
