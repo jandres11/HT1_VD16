@@ -108,8 +108,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(77, 23);
             this.button3.TabIndex = 9;
-            this.button3.Text = "Mediana";
+            this.button3.Text = "Regla de 3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -117,7 +118,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 10;
-            this.button4.Text = "Regla de 3";
+            this.button4.Text = "Mediana";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // label4

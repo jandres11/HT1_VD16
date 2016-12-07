@@ -30,7 +30,6 @@ namespace HT1_VD16_IPC2
             c = int.Parse(textBox3.Text);
             double raiz1 = (double)((b * -1) + ((b * b) - (4 * c * a)) ^ (1 / 2)) / (2 * a);
             double raiz2 = (double)((b * -1) - ((b * b) - (4 * c * a)) ^ (1 / 2)) / (2 * a);
-            double x = raiz1 + raiz2;
             MessageBox.Show("Las raices son: " + raiz1 +" y " + raiz2);
         }
 
@@ -42,9 +41,21 @@ namespace HT1_VD16_IPC2
             var1 = int.Parse(textBox1.Text);
             var2 = int.Parse(textBox2.Text);
             var3 = int.Parse(textBox3.Text);
-            promedio = (var1 + var2 + var3) / 3;
-            var1 = var2;
+            promedio = (double)(var1 + var2 + var3) / 3;
+
             MessageBox.Show("El promedio es: "+promedio);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int x, y, z;
+            x = int.Parse(textBox1.Text);
+            y = int.Parse(textBox2.Text);
+            z = int.Parse(textBox3.Text);
+            double res = (z * y / x);
+
+            MessageBox.Show("El resultado de X--Y... Z--Resultado es: " + res);
+
         }
     }
 }
